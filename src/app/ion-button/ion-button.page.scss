@@ -1,0 +1,23 @@
+.boton-personalizado-2 {
+    --background: #FEFEFE; /* Color de fondo personalizado */
+    --color: #000; /* Color del texto (cámbialo según sea necesario) */
+    border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+    
+    width: 180px; /* Para pantallas más grandes como tablets o PC */
+    height: 40px;
+  
+    box-sizing: border-box;
+   
+    transform: translate(10%, 15%);
+    font-weight: bold; /* negrita */
+   
+    
+  }
+  
+.boton-personalizado-3 {
+
+    transform: translate(0%, 15%);
+    font-weight: bold; /* negrita */
+   
+    
+  }

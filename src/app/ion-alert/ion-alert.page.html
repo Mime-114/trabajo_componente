@@ -1,0 +1,35 @@
+
+<ion-content [fullscreen]="true">
+  <ion-button class="boton-personalizado-2" id="present-alert">Inline Alerts (Recommended)</ion-button>
+  <ion-alert
+    trigger="present-alert"
+    header="A Short Title Is Best"
+    subHeader="A Sub Header Is Optional"
+    message="A message should be a short, complete sentence."
+    [buttons]="alertButtons"
+  ></ion-alert>
+
+  <ion-button class="boton-personalizado-3" (click)="setOpen(true)">Using isOpen</ion-button>
+  <ion-alert
+    [isOpen]="isAlertOpen"
+    header="A Short Title Is Best"
+    subHeader="A Sub Header Is Optional"
+    message="A message should be a short, complete sentence."
+    [buttons]="alertButtons_2"
+    (didDismiss)="setOpen(false)"
+  ></ion-alert>
+
+  <ion-button class="boton-personalizado-4" (click)="presentAlert()">Controller Alerts</ion-button>
+
+  <ion-button class="boton-personalizado-5" id="present-alert_2">Inputs</ion-button>
+  <ion-alert
+    trigger="present-alert_2"
+    header="Please enter your info"
+    [buttons]="alertButtons_3"
+    [inputs]="alertInputs"
+  ></ion-alert>
+
+
+  <ion-button class="boton-personalizado-6"  id="present-alert-3">Customization</ion-button>
+  <ion-alert trigger="present-alert-3" class="custom-alert" header="Are you sure?" [buttons]="alertButtons_5"></ion-alert>
+</ion-content>

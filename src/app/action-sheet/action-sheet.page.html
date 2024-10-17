@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  <ion-button class="boton-personalizado-2" id="open-action-sheet">Inline Action Sheets</ion-button>
+  <ion-action-sheet trigger="open-action-sheet" header="Actions" [buttons]="actionSheetButtons"></ion-action-sheet>
+
+  <ion-button class="boton-personalizado-3" (click)="setOpen(true)">Using isOpen</ion-button>
+<ion-action-sheet
+  [isOpen]="isActionSheetOpen"
+  header="Actions"
+  [buttons]="actionSheetButtons_2"
+  (didDismiss)="setOpen(false)"
+></ion-action-sheet>
+
+<ion-button class="boton-personalizado-4" (click)="presentActionSheet()">Controller Action Sheets</ion-button>
+
+
+</ion-content>
